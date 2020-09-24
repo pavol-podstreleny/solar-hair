@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  flex-direction: column;
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    padding: 2.4rem;
+    align-items: center;
+
+    h1 {
+      flex: 1;
+    }
+
+    #menu-burger {
+      img {
+        padding: 8px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    #navigation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+    }
+  }
+}
