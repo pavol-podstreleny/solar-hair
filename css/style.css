@@ -57,7 +57,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 100vh;
-  background: url("../img/banner/place_01.jpg") no-repeat bottom;
+  background: url("../img/banner/background.jpg") no-repeat bottom;
   background-color: black;
   background-size: cover;
 }
