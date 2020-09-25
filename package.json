@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,14 @@
   "bugs": {
     "url": "https://github.com/pavol-podstreleny/solar-hair/issues"
   },
-  "homepage": "https://github.com/pavol-podstreleny/solar-hair#readme"
+  "homepage": "https://github.com/pavol-podstreleny/solar-hair#readme",
+  "dependencies": {
+    "swiper": "^6.3.0"
+  },
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
 }

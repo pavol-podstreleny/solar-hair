@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../src/css/style.css" />
     <title>Solar Hair</title>
   </head>
   <body>
@@ -36,7 +40,7 @@
       <section id="introduction">
         <div id="introduction-main">
           <h2>日本燙髮專門</h2>
-          <a href="#">看菜單</a>
+          <a href="#" class="button">看菜單</a>
         </div>
         <div id="info-wrapper">
           <div id="introduction-info">
@@ -59,9 +63,38 @@
     <main>
       <section id="galery">
         <h2>相片庫</h2>
-        <div></div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../src/img/slider/hair_cut_01.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../src/img/slider/hair_cut_02.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../src/img/slider/hair_cut_03.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../src/img/slider/hair_cut_04.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../src/img/slider/hair_cut_01.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../src/img/slider/hair_cut_02.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../src/img/slider/hair_cut_03.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../src/img/slider/hair_cut_04.jpg" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <a href="#" class="button button-galery">顯示所有照片</a>
       </section>
     </main>
-    <script src="/js/main.js"></script>
+    <script src="bundle.js"></script>
   </body>
 </html>
