@@ -42,6 +42,7 @@ a {
 h1 {
   font-size: 1.8rem;
   font-family: petit;
+  font-weight: 600;
 }
 
 h2 {
@@ -231,6 +232,62 @@ header nav .open {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   width: 100%;
+}
+
+section#introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+section#introduction #introduction-main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#introduction #introduction-main h2 {
+  font-size: 4.8rem;
+  font-weight: 100;
+}
+
+section#introduction #introduction-main a {
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 1.6rem auto 0 auto;
+  padding: 0.8rem 3.6rem;
+  background-color: transparent;
+  border: 2px solid #cf8a37;
+  border-radius: 4px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 1px 1px #5c4f4f, 2px 2px #967f7f;
+          box-shadow: 1px 1px #5c4f4f, 2px 2px #967f7f;
+}
+
+section#introduction #introduction-main a:hover {
+  background-color: #cf8a37;
+  color: #302424;
 }
 
 #facebook {

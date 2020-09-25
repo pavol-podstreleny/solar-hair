@@ -131,6 +131,43 @@ header {
   }
 }
 
+section#introduction {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  #introduction-main {
+    flex: 1;
+    display: inline-flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+
+    h2 {
+      font-size: 4.8rem;
+      font-weight: 100;
+    }
+
+    a {
+      position: relative;
+      align-self: flex-start;
+      margin: 1.6rem auto 0 auto;
+      padding: 0.8rem 3.6rem;
+
+      background-color: transparent;
+      border: 2px solid #cf8a37;
+      border-radius: 4px;
+      transition: all 0.5s ease;
+      box-shadow: 1px 1px rgb(92, 79, 79), 2px 2px #967f7f;
+
+      &:hover {
+        background-color: #cf8a37;
+        color: rgb(48, 36, 36);
+      }
+    }
+  }
+}
+
 #facebook {
   background: url("../img/social/facebook.png") no-repeat center;
 
