@@ -1,6 +1,10 @@
 header {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  background: url("../img/banner/place_01.jpg") no-repeat bottom;
+  background-color: black;
+  background-size: cover;
 
   nav {
     display: flex;
@@ -8,23 +12,137 @@ header {
     padding: 2.4rem;
     align-items: center;
 
+    @media screen and (min-width: 1280px) {
+      width: 1280px;
+      margin: 0 auto;
+    }
+
     h1 {
       flex: 1;
     }
 
-    #menu-burger {
+    #close-menu {
+      position: absolute;
+      top: 2.4rem;
+      right: 2.4rem;
+    }
+
+    #menu-burger,
+    #close-menu {
+      @media screen and (min-width: 600px) {
+        display: none;
+      }
+
       img {
         padding: 8px;
         display: block;
-        margin: 0 auto;
       }
     }
 
-    #navigation {
+    #devider {
+      @media screen and (min-width: 600px) {
+        display: block;
+        width: 1px;
+        height: 48px;
+        background-color: #fff;
+      }
+    }
+
+    #social {
+      margin: 0px 0px 4.8rem 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      @media screen and (min-width: 600px) {
+        margin: 0px;
+        margin-left: 8px;
+      }
+
+      a {
+        font-size: 0px;
+        text-indent: -9999em;
+        margin: 0 8px;
+        padding: 0px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 4.8rem;
+      margin-bottom: 2.4rem;
+
+      @media screen and (min-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+      }
+
+      li {
+        text-align: center;
+
+        a {
+          display: block;
+          padding: 1.6rem;
+          margin-bottom: 0.8rem;
+
+          @media screen and (min-width: 600px) {
+            padding: 8px;
+            margin: 0px 8px;
+          }
+
+          &:hover {
+            color: #e2a256;
+          }
+        }
+      }
+    }
+
+    .navigation {
       position: absolute;
+      width: 100vw;
+      padding: 2.4rem;
+      background-color: black;
       top: 0;
       left: 0;
-      transform: translateX(-100%);
+      transform: translateY(-102%);
+      transition: transform 0.5s ease;
+      box-shadow: 0 0 8px black;
+
+      @media screen and (min-width: 600px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        width: auto;
+        padding: 0px;
+        box-shadow: none;
+        transform: translateY(0%);
+        background-color: transparent;
+      }
     }
+
+    .open {
+      transform: translateY(0%);
+      width: 100%;
+    }
+  }
+}
+
+#facebook {
+  background: url("../img/social/facebook.png") no-repeat center;
+
+  &:hover {
+    background: url("../img/social/facebook-hover.png") no-repeat center;
+  }
+}
+
+#instagram {
+  background: url("../img/social/instagram.png") no-repeat center;
+
+  &:hover {
+    background: url("../img/social/instagram-hover.png") no-repeat center;
   }
 }

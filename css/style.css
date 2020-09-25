@@ -24,6 +24,7 @@ body,
 html {
   font-family: noto-regular, sans-serif;
   font-size: 62.5%;
+  color: #fff;
 }
 
 a,
@@ -31,6 +32,11 @@ p,
 li,
 span {
   font-size: 1.6rem;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -50,6 +56,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100vh;
+  background: url("../img/banner/place_01.jpg") no-repeat bottom;
+  background-color: black;
+  background-size: cover;
 }
 
 header nav {
@@ -66,23 +76,176 @@ header nav {
           align-items: center;
 }
 
+@media screen and (min-width: 1280px) {
+  header nav {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
+
 header nav h1 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
 }
 
-header nav #menu-burger img {
-  padding: 8px;
-  display: block;
-  margin: 0 auto;
+header nav #close-menu {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
 }
 
-header nav #navigation {
+@media screen and (min-width: 600px) {
+  header nav #menu-burger,
+  header nav #close-menu {
+    display: none;
+  }
+}
+
+header nav #menu-burger img,
+header nav #close-menu img {
+  padding: 8px;
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  header nav #devider {
+    display: block;
+    width: 1px;
+    height: 48px;
+    background-color: #fff;
+  }
+}
+
+header nav #social {
+  margin: 0px 0px 4.8rem 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  header nav #social {
+    margin: 0px;
+    margin-left: 8px;
+  }
+}
+
+header nav #social a {
+  font-size: 0px;
+  text-indent: -9999em;
+  margin: 0 8px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+}
+
+header nav ul {
+  list-style: none;
+  margin-top: 4.8rem;
+  margin-bottom: 2.4rem;
+}
+
+@media screen and (min-width: 600px) {
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0px;
+  }
+}
+
+header nav ul li {
+  text-align: center;
+}
+
+header nav ul li a {
+  display: block;
+  padding: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (min-width: 600px) {
+  header nav ul li a {
+    padding: 8px;
+    margin: 0px 8px;
+  }
+}
+
+header nav ul li a:hover {
+  color: #e2a256;
+}
+
+header nav .navigation {
   position: absolute;
+  width: 100vw;
+  padding: 2.4rem;
+  background-color: black;
   top: 0;
   left: 0;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  -webkit-transform: translateY(-102%);
+          transform: translateY(-102%);
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-box-shadow: 0 0 8px black;
+          box-shadow: 0 0 8px black;
+}
+
+@media screen and (min-width: 600px) {
+  header nav .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    width: auto;
+    padding: 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    background-color: transparent;
+  }
+}
+
+header nav .open {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  width: 100%;
+}
+
+#facebook {
+  background: url("../img/social/facebook.png") no-repeat center;
+}
+
+#facebook:hover {
+  background: url("../img/social/facebook-hover.png") no-repeat center;
+}
+
+#instagram {
+  background: url("../img/social/instagram.png") no-repeat center;
+}
+
+#instagram:hover {
+  background: url("../img/social/instagram-hover.png") no-repeat center;
 }
 /*# sourceMappingURL=style.css.map */
