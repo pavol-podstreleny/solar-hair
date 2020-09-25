@@ -15,12 +15,5 @@
   "bugs": {
     "url": "https://github.com/pavol-podstreleny/solar-hair/issues"
   },
-  "homepage": "https://github.com/pavol-podstreleny/solar-hair#readme",
-  "devDependencies": {
-    "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
-  },
-  "dependencies": {
-    "swiper": "^6.2.0"
-  }
+  "homepage": "https://github.com/pavol-podstreleny/solar-hair#readme"
 }
