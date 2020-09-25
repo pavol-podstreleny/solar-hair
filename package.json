@@ -2,7 +2,7 @@
   "name": "solar-hair",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/pavol-podstreleny/solar-hair/issues"
   },
-  "homepage": "https://github.com/pavol-podstreleny/solar-hair#readme"
+  "homepage": "https://github.com/pavol-podstreleny/solar-hair#readme",
+  "devDependencies": {
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "swiper": "^6.2.0"
+  }
 }
