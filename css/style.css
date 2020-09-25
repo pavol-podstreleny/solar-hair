@@ -33,6 +33,7 @@ li,
 span {
   font-size: 1.6rem;
   color: #fff;
+  font-family: noto-light;
 }
 
 a {
@@ -47,6 +48,12 @@ h1 {
 
 h2 {
   font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #cf8a37;
 }
 
 header {
@@ -190,9 +197,10 @@ header nav ul li a:hover {
 
 header nav .navigation {
   position: absolute;
+  z-index: 99;
   width: 100vw;
   padding: 2.4rem;
-  background-color: black;
+  background-color: #0c0c0c;
   top: 0;
   left: 0;
   -webkit-transform: translateY(-102%);
@@ -247,7 +255,7 @@ section#introduction {
           flex: 1;
 }
 
-section#introduction #introduction-main {
+#introduction-main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -265,12 +273,12 @@ section#introduction #introduction-main {
           justify-content: center;
 }
 
-section#introduction #introduction-main h2 {
+#introduction-main h2 {
   font-size: 4.8rem;
   font-weight: 100;
 }
 
-section#introduction #introduction-main a {
+#introduction-main a {
   position: relative;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -285,9 +293,59 @@ section#introduction #introduction-main a {
           box-shadow: 1px 1px #5c4f4f, 2px 2px #967f7f;
 }
 
-section#introduction #introduction-main a:hover {
+#introduction-main a:hover {
   background-color: #cf8a37;
   color: #302424;
+}
+
+#info-wrapper {
+  width: 100%;
+  background-color: #0c0c0c;
+}
+
+#introduction-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.2rem;
+}
+
+@media screen and (min-width: 1280px) {
+  #introduction-info {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+#introduction-info div {
+  margin: 1.2rem;
+}
+
+#opening-hours,
+#phone-number {
+  padding-left: 32px;
+}
+
+#opening-hours::before,
+#phone-number::before {
+  content: "";
+  display: inline;
+}
+
+#opening-hours {
+  background: url("../img/icons/calendar.svg") no-repeat;
+  background-position: 0px 5px;
+}
+
+#phone-number {
+  background: url("../img/icons/phone.svg") no-repeat;
+  background-position: 0px 5px;
 }
 
 #facebook {

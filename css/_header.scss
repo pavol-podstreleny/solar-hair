@@ -102,9 +102,10 @@ header {
 
     .navigation {
       position: absolute;
+      z-index: 99;
       width: 100vw;
       padding: 2.4rem;
-      background-color: black;
+      background-color: #0c0c0c;
       top: 0;
       left: 0;
       transform: translateY(-102%);
@@ -135,37 +136,78 @@ section#introduction {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
 
-  #introduction-main {
-    flex: 1;
-    display: inline-flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: center;
+#introduction-main {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
 
-    h2 {
-      font-size: 4.8rem;
-      font-weight: 100;
-    }
+  h2 {
+    font-size: 4.8rem;
+    font-weight: 100;
+  }
 
-    a {
-      position: relative;
-      align-self: flex-start;
-      margin: 1.6rem auto 0 auto;
-      padding: 0.8rem 3.6rem;
+  a {
+    position: relative;
+    align-self: flex-start;
+    margin: 1.6rem auto 0 auto;
+    padding: 0.8rem 3.6rem;
 
-      background-color: transparent;
-      border: 2px solid #cf8a37;
-      border-radius: 4px;
-      transition: all 0.5s ease;
-      box-shadow: 1px 1px rgb(92, 79, 79), 2px 2px #967f7f;
+    background-color: transparent;
+    border: 2px solid #cf8a37;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+    box-shadow: 1px 1px rgb(92, 79, 79), 2px 2px #967f7f;
 
-      &:hover {
-        background-color: #cf8a37;
-        color: rgb(48, 36, 36);
-      }
+    &:hover {
+      background-color: #cf8a37;
+      color: rgb(48, 36, 36);
     }
   }
+}
+
+#info-wrapper {
+  width: 100%;
+  background-color: #0c0c0c;
+}
+
+#introduction-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1.2rem;
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  div {
+    margin: 1.2rem;
+  }
+}
+
+#opening-hours,
+#phone-number {
+  padding-left: 32px;
+
+  &::before {
+    content: "";
+    display: inline;
+  }
+}
+
+#opening-hours {
+  background: url("../img/icons/calendar.svg") no-repeat;
+  background-position: 0px 5px;
+}
+
+#phone-number {
+  background: url("../img/icons/phone.svg") no-repeat;
+  background-position: 0px 5px;
 }
 
 #facebook {
