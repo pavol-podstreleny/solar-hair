@@ -178,7 +178,7 @@ section#introduction {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 1.2rem;
+  padding: 1.6rem;
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
@@ -186,12 +186,13 @@ section#introduction {
   }
 
   div {
-    margin: 1.2rem;
+    margin: 1.6rem;
   }
 }
 
 #opening-hours,
-#phone-number {
+#phone-number,
+#address {
   padding-left: 32px;
 
   &::before {
@@ -207,6 +208,11 @@ section#introduction {
 
 #phone-number {
   background: url("../img/icons/phone.svg") no-repeat;
+  background-position: 0px 5px;
+}
+
+#address {
+  background: url("../img/icons/map.svg") no-repeat;
   background-position: 0px 5px;
 }
 
