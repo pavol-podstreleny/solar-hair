@@ -16,3 +16,33 @@
     }
   }
 }
+
+.swiper-container {
+  position: relative;
+  width: 100%;
+  margin: $margin-xl 0px;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  width: auto;
+
+  img {
+    border-radius: $radius;
+    max-width: 100vw;
+
+    @media screen and (min-width: 500px) {
+      max-width: 400px;
+    }
+
+    box-shadow: 4px 4px 4px rgba($color: #000000, $alpha: 0.1);
+  }
+}
+.swiper-pagination {
+  position: relative;
+  margin-top: $margin-xl;
+}
