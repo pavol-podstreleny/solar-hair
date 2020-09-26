@@ -417,30 +417,21 @@ section#introduction {
 }
 
 #galery {
-  position: relative;
   padding: 4.8rem 0 7rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 #galery h2 {
   color: #000;
-  text-align: center;
 }
 
-#galery a.button-galery {
+#galery a.button {
   color: #000;
   -webkit-box-shadow: 1px 1px #fff, 2px 2px #967f7f;
           box-shadow: 1px 1px #fff, 2px 2px #967f7f;
   margin: 0 auto;
 }
 
-#galery a.button-galery:hover {
+#galery a.button:hover {
   color: #fff;
 }
 

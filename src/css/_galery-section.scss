@@ -1,0 +1,18 @@
+#galery {
+  padding: $padding-section-top 0 $padding-section-bottom 0;
+
+  h2 {
+    color: $color-text-black;
+  }
+
+  a.button {
+    color: $color-text-black;
+    box-shadow: 1px 1px $btn-shadow-primary-pure-white,
+      2px 2px $btn-shadow-second;
+    margin: 0 auto;
+
+    &:hover {
+      color: $color-text-white;
+    }
+  }
+}
