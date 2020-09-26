@@ -84,7 +84,7 @@ a.button:hover {
   color: #302424;
 }
 
-section#contact {
+main section {
   position: relative;
   padding: 4.8rem 3.6rem 7rem 3.6rem;
   display: -webkit-box;
@@ -96,7 +96,7 @@ section#contact {
           flex-direction: column;
 }
 
-section#contact h2 {
+main section h2 {
   text-align: center;
 }
 
@@ -558,6 +558,8 @@ section#contact {
 
 section#contact a.button {
   margin-top: 1.6rem;
+  -webkit-box-shadow: 1px 1px #0c0c0c, 2px 2px #967f7f;
+          box-shadow: 1px 1px #0c0c0c, 2px 2px #967f7f;
 }
 
 #contact-wrapper {
@@ -604,7 +606,6 @@ section#contact a.button {
 }
 
 .days {
-  height: auto;
   border-radius: 4px;
   padding: 1.2rem;
   background-color: #fff;
@@ -617,7 +618,6 @@ section#contact a.button {
 }
 
 .days > span:first-child {
-  font-family: noto-bold;
   color: #cf8a37;
 }
 
