@@ -1,0 +1,56 @@
+#references {
+  background-color: $color-bg-grey;
+
+  & > div {
+    background-color: $color-bg-white;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.04);
+    padding: $padding-xl;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: $margin-xl;
+  }
+
+  a.button {
+    color: $color-text-black;
+    box-shadow: 1px 1px $color-bg-grey, 2px 2px $btn-shadow-second;
+    margin: 0 auto;
+
+    &:hover {
+      color: $color-bg-white;
+    }
+  }
+
+  h2 {
+    color: $color-text-black;
+    margin-bottom: $margin-xl;
+  }
+
+  q {
+    display: block;
+    color: $color-text-black;
+    margin-top: $margin-m;
+  }
+
+  q:before {
+    content: none;
+  }
+
+  q:after {
+    content: none;
+  }
+
+  span {
+    font-family: noto-regular;
+    color: $color-text-black;
+    font-size: $font-size-m;
+  }
+
+  .star-5 {
+    display: block;
+    float: right;
+    width: 24px * 5;
+    height: 24px;
+    background-image: url(../img/icons/star.svg);
+    text-indent: -9999em;
+  }
+}
