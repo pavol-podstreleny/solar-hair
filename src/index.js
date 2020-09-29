@@ -29,3 +29,17 @@ closeMenuButton.addEventListener("click", (e) => {
   e.preventDefault();
   navigation.classList.toggle("open");
 });
+
+//Service worker
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then((req) => {
+        console.log("Registered! :) ", req);
+      })
+      .catch((err) => {
+        console.log("Ragistration failed", err);
+      });
+  });
+}

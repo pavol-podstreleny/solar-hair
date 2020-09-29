@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,9 @@
     "swiper": "^6.3.0"
   },
   "devDependencies": {
+    "copy-webpack-plugin": "^6.1.1",
     "css-loader": "^4.3.0",
+    "imagemin-webpack-plugin": "^2.4.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
