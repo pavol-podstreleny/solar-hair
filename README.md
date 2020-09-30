@@ -9,13 +9,13 @@ Following technologies were used to develop the website:
 - [Webpack](https://webpack.js.org/)
 
 ## Run the website
-The first step is to clone the solar-hair repository:
+1) The first step is to clone the solar-hair repository:
 
 ```shell
 git clone https://github.com/pavol-podstreleny/solar-hair.git
 ```
 
-Move inside the `solar-hair` folder and run:
+2) Move inside the `solar-hair` folder and run:
 ```shell
 npm run build
 ```
@@ -23,4 +23,5 @@ To run the `npm run build` command, you need to install [node.js](https://nodejs
 
 `nmp run build` runs [webpack](https://webpack.js.org/) that creates bundles.
 Distribution `dist` folder is created and contains `index.html` that represent HTML website.
-Open `index.html` in the browser.
+
+4) Open `index.html` in the browser.
