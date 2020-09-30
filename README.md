@@ -5,6 +5,7 @@ Following technologies were used to develop the website:
 - HTML 5
 - CSS 3
 - JavaScript
+- [Swiper](https://github.com/nolimits4web/swiper)
 - [Sass](https://sass-lang.com/)
 - [Webpack](https://webpack.js.org/)
 
