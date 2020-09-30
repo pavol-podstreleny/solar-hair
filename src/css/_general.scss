@@ -6,9 +6,9 @@
 
 body,
 html {
-  font-family: "Noto Sans Tc", sans-serif;
+  font-family: $font-family-primary, sans-serif;
   font-size: 62.5%;
-  color: #fff;
+  color: $color-text-white;
 }
 
 html {
@@ -20,9 +20,9 @@ p,
 li,
 span,
 q {
-  font-size: 1.6rem;
-  color: #fff;
-  font-weight: 100;
+  font-size: $font-size-m;
+  color: $color-text-white;
+  font-weight: $font-weight-light;
 }
 
 a {
@@ -30,40 +30,39 @@ a {
 }
 
 h1 {
-  font-size: 1.8rem;
-  font-family: "Petit Formal Script", sans-serif;
+  font-size: $font-size-m;
+  font-family: $font-family-logo, sans-serif;
 }
 
 h2 {
-  font-size: 4.8rem;
+  font-size: $font-size-xl;
 }
 
 h3 {
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: #cf8a37;
+  font-size: $font-size-m;
+  font-weight: $font-weight-regular;
+  color: $color-text-orange;
 }
 
 a.button {
   position: relative;
-  margin: 1.6rem auto 0 auto;
-  padding: 0.8rem 3.6rem;
-
+  margin: $margin-m auto 0 auto;
+  padding: $padding-button-tb $padding-button-rl;
   background-color: transparent;
-  border: 2px solid #cf8a37;
-  border-radius: 4px;
+  border: 2px solid $color-bg-orange;
+  border-radius: $radius;
   transition: all 0.5s ease;
-  box-shadow: 1px 1px rgb(92, 79, 79), 2px 2px #967f7f;
+  box-shadow: 1px 1px rgb(92, 79, 79), 2px 2px $btn-shadow-second;
 
   &:hover {
-    background-color: #cf8a37;
-    color: rgb(48, 36, 36);
+    background-color: $color-bg-orange;
+    color: $color-text-btn-hover;
   }
 }
 
 main section {
   position: relative;
-  padding: 4.8rem 3.6rem 7rem 3.6rem;
+  padding: $padding-section-top $padding-xl $padding-section-bottom $padding-xl;
   display: flex;
   flex-direction: column;
 

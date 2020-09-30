@@ -2,10 +2,13 @@
 $color-bg-black: #0c0c0c;
 $color-bg-white: #fff;
 $color-bg-grey: #f7f7f7;
+$color-bg-orange: #cf8a37;
+
 $color-text-black: #000;
 $color-text-white: #fff;
 $color-text-orange: #cf8a37;
 $color-text-orange-dark: #ad6308;
+$color-text-btn-hover: rgb(48, 36, 36);
 
 // Margin
 $margin-s: 1.2rem;
@@ -18,10 +21,19 @@ $padding-s: 1.2rem;
 $padding-xl: 3.6rem;
 $padding-section-top: 4.8rem;
 $padding-section-bottom: 7rem;
+$padding-button-tb: 0.8rem;
+$padding-button-rl: 3.6rem;
 
 // Font
 $font-size-s: 1.4rem;
 $font-size-m: 1.8rem;
+$font-size-xl: 4.8rem;
+
+$font-family-primary: "Noto Sans Tc";
+$font-family-logo: "Petit Formal Script";
+
+$font-weight-light: 100;
+$font-weight-regular: 400;
 
 // Shadow
 $btn-shadow-second: #967f7f;
