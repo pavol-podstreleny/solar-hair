@@ -1,0 +1,80 @@
+section#introduction {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#introduction-main {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+
+  a.button {
+    box-shadow: 1px 1px $btn-shadow-primary-brown, 2px 2px $btn-shadow-second;
+  }
+}
+
+#info-wrapper {
+  width: 100%;
+  background-color: $color-bg-black;
+}
+
+#introduction-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: $padding-m;
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+    margin: 0 auto;
+  }
+
+  div {
+    margin: $margin-m;
+  }
+}
+
+#opening-hours,
+#phone-number,
+#address {
+  padding-left: padding-xl;
+
+  &::before {
+    content: "";
+    display: inline;
+  }
+}
+
+#opening-hours {
+  background: url("../img/icons/calendar.svg") no-repeat;
+  background-position: 0px 3px;
+}
+
+#phone-number {
+  background: url("../img/icons/phone.svg") no-repeat;
+  background-position: 0px 3px;
+}
+
+#address {
+  background: url("../img/icons/map.svg") no-repeat;
+  background-position: 0px 3px;
+}
+
+#facebook {
+  background: url("../img/social/facebook.png") no-repeat center;
+
+  &:hover {
+    background: url("../img/social/facebook-hover.png") no-repeat center;
+  }
+}
+
+#instagram {
+  background: url("../img/social/instagram.png") no-repeat center;
+
+  &:hover {
+    background: url("../img/social/instagram-hover.png") no-repeat center;
+  }
+}

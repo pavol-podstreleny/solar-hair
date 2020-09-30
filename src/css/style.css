@@ -296,30 +296,9 @@ section#introduction {
           justify-content: center;
 }
 
-#introduction-main h2 {
-  font-size: 4.8rem;
-  font-weight: 400;
-  text-align: center;
-}
-
-#introduction-main a {
-  position: relative;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin: 1.6rem auto 0 auto;
-  padding: 0.8rem 3.6rem;
-  background-color: transparent;
-  border: 2px solid #cf8a37;
-  border-radius: 4px;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+#introduction-main a.button {
   -webkit-box-shadow: 1px 1px #5c4f4f, 2px 2px #967f7f;
           box-shadow: 1px 1px #5c4f4f, 2px 2px #967f7f;
-}
-
-#introduction-main a:hover {
-  background-color: #cf8a37;
-  color: #302424;
 }
 
 #info-wrapper {
@@ -354,7 +333,7 @@ section#introduction {
 #opening-hours,
 #phone-number,
 #address {
-  padding-left: 32px;
+  padding-left: padding-xl;
 }
 
 #opening-hours::before,
@@ -366,17 +345,17 @@ section#introduction {
 
 #opening-hours {
   background: url("../img/icons/calendar.svg") no-repeat;
-  background-position: 0px 5px;
+  background-position: 0px 3px;
 }
 
 #phone-number {
   background: url("../img/icons/phone.svg") no-repeat;
-  background-position: 0px 5px;
+  background-position: 0px 3px;
 }
 
 #address {
   background: url("../img/icons/map.svg") no-repeat;
-  background-position: 0px 5px;
+  background-position: 0px 3px;
 }
 
 #facebook {
