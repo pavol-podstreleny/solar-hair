@@ -28,4 +28,4 @@ To run the `npm run build` command, you need to install [node.js](https://nodejs
 `nmp run build` runs [webpack](https://webpack.js.org/) that creates bundles.
 Distribution `dist` folder is created and contains `index.html` that represent HTML website.
 
-4) Open `index.html` in the browser.
+4) Open `index.html` from `dist` folder in the browser.
