@@ -40,7 +40,7 @@ section#introduction {
 #opening-hours,
 #phone-number,
 #address {
-  padding-left: padding-xl;
+  padding-left: $padding-xl;
 
   &::before {
     content: "";

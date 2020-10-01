@@ -181,7 +181,7 @@ header nav #social a {
 header nav ul {
   list-style: none;
   margin-top: 4.8rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.6rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -333,7 +333,7 @@ section#introduction {
 #opening-hours,
 #phone-number,
 #address {
-  padding-left: padding-xl;
+  padding-left: 3.6rem;
 }
 
 #opening-hours::before,
