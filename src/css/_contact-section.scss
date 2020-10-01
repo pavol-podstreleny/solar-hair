@@ -44,7 +44,7 @@ section#contact {
 
   span {
     color: $color-text-black;
-    font-weight: 400;
+    font-weight: $font-weight-regular;
   }
 
   & > span:first-child {

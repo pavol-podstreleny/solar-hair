@@ -3,13 +3,13 @@ header {
   flex-direction: column;
   height: 100vh;
   background: url("../img/banner/background.jpg") no-repeat bottom;
-  background-color: black;
+  background-color: $color-bg-black;
   background-size: cover;
 
   nav {
     display: flex;
     flex-direction: row;
-    padding: 2.4rem;
+    padding: $padding-x;
     align-items: center;
 
     @media screen and (min-width: 1280px) {
@@ -23,8 +23,8 @@ header {
 
     #close-menu {
       position: absolute;
-      top: 2.4rem;
-      right: 2.4rem;
+      top: $padding-x;
+      right: $padding-x;
     }
 
     #menu-burger,
@@ -34,7 +34,7 @@ header {
       }
 
       img {
-        padding: 8px;
+        padding: $padding-menu-opener;
         display: block;
       }
     }
@@ -44,12 +44,12 @@ header {
         display: block;
         width: 1px;
         height: 48px;
-        background-color: #fff;
+        background-color: $color-bg-white;
       }
     }
 
     #social {
-      margin: 0px 0px 4.8rem 0px;
+      margin: 0px 0px $margin-xxl 0px;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -71,8 +71,8 @@ header {
 
     ul {
       list-style: none;
-      margin-top: 4.8rem;
-      margin-bottom: 2.4rem;
+      margin-top: $margin-xxl;
+      margin-bottom: $margin-x;
 
       @media screen and (min-width: 600px) {
         display: flex;
@@ -85,7 +85,7 @@ header {
 
         a {
           display: block;
-          padding: 1.6rem;
+          padding: $padding-m;
           margin-bottom: 0.8rem;
 
           @media screen and (min-width: 600px) {

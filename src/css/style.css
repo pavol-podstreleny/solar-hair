@@ -89,7 +89,7 @@ header {
           flex-direction: column;
   height: 100vh;
   background: url("../img/banner/background.jpg") no-repeat bottom;
-  background-color: black;
+  background-color: #0c0c0c;
   background-size: cover;
 }
 
@@ -135,7 +135,7 @@ header nav #close-menu {
 
 header nav #menu-burger img,
 header nav #close-menu img {
-  padding: 8px;
+  padding: 0.8rem;
   display: block;
 }
 
