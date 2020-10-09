@@ -1,5 +1,5 @@
 # Solar hair
-Solar hair represents a static [website](https://solarhair.com) built for a local hair salon located in Taipei. 
+Solar hair represents a static [website](https://peaceful-meninsky-c876b4.netlify.app/) built for a local hair salon located in Taipei. 
 
 Following technologies were used to develop the website:
 - HTML 5
