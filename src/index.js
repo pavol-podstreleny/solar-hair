@@ -1,4 +1,5 @@
 import Swiper, { Pagination, Autoplay } from "swiper";
+import "./css/style.scss";
 
 Swiper.use([Pagination, Autoplay]);
 
