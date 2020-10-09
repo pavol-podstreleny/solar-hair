@@ -1,5 +1,6 @@
 import Swiper, { Pagination, Autoplay } from "swiper";
 import "./css/style.scss";
+import "./img/social/icon.png";
 
 Swiper.use([Pagination, Autoplay]);
 
