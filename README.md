@@ -22,11 +22,9 @@ cd solar-hair
 ```
 3) Run command:
 ```shell
-npm run build
+npm run dev
 ```
-To run the `npm run build` command, you need to install [node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) (node package manager) that comes with node.js.
+To run the `npm run dev` command, you need to install [node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) (node package manager) that comes with node.js.
 
-`nmp run build` runs [webpack](https://webpack.js.org/) that creates bundles.
-Distribution `dist` folder is created and contains `index.html` that represent HTML website.
+`nmp run dev` runs [webpack](https://webpack.js.org/) dev server on [localhost:8080](http://localhost:8080) and uses webpack development config.
 
-4) Open `index.html` from `dist` folder in the browser.
