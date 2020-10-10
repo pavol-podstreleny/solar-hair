@@ -33,7 +33,7 @@ section#contact {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: left;
-  gap: 1.6rem;
+  // gap: 1.6rem;
 }
 
 .days {
@@ -41,6 +41,8 @@ section#contact {
   padding: $padding-s;
   background-color: $color-bg-white;
   text-align: center;
+  margin-right: $padding-m;
+  margin-bottom: $padding-m;
 
   span {
     color: $color-text-black;
