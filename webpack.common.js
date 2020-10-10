@@ -8,14 +8,6 @@ module.exports = {
         test: /\.html$/,
         loader: "html-loader",
       },
-      {
-        test: /\.(svg|png|jpeg|jpg|gif)$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-          outputPath: "images",
-        },
-      },
     ],
   },
   plugins: [

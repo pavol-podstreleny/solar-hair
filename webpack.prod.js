@@ -14,7 +14,35 @@ module.exports = merge(common, {
       {
         test: /\.s[ac]ss$/i,
         loader: [MiniCssExtractPlugin.loader, 'css-loader','sass-loader']
-      }
+      },
+      {
+        test: /\.(png|jpe?g|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: "[name].[ext]",
+              outputPath: "images",
+            },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: [65,80]
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.8],
+                speed: 4
+              },
+            }
+          },
+        ],
+      },
     ]
   },
   plugins: [new MiniCssExtractPlugin({
